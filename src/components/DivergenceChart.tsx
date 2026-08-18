@@ -1,5 +1,5 @@
 
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+
 
 interface DivergenceChartProps {
   title: string;
@@ -16,23 +16,11 @@ export const DivergenceChart: React.FC<DivergenceChartProps> = ({
   title, data, line1Key, line1Name, line1Color, line2Key, line2Name, line2Color
 }) => {
   return (
-    <div className="card flex flex-col gap-4">
+    <div className="card flex flex-col gap-4" style={{ minHeight: '100px', backgroundColor: 'var(--card-bg)' }}>
       <h3 className="heading-md text-secondary">{title}</h3>
-      
-      <div style={{ width: '100%', overflowX: 'auto' }}>
-        <LineChart width={800} height={300} data={data} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
-          <CartesianGrid strokeDasharray="3 3" stroke="var(--card-border)" vertical={false} />
-          <XAxis dataKey="date" stroke="var(--text-secondary)" fontSize={12} tickLine={false} axisLine={false} />
-          <YAxis yAxisId="left" stroke={line1Color} fontSize={12} tickLine={false} axisLine={false} />
-          <YAxis yAxisId="right" orientation="right" stroke={line2Color} fontSize={12} tickLine={false} axisLine={false} />
-          <Tooltip 
-            contentStyle={{ backgroundColor: 'var(--card-bg)', borderColor: 'var(--card-border)', borderRadius: '8px' }}
-            itemStyle={{ fontSize: '14px' }}
-          />
-          <Legend verticalAlign="top" height={36} iconType="circle" />
-          <Line yAxisId="left" type="monotone" dataKey={line1Key} name={line1Name} stroke={line1Color} strokeWidth={2} dot={false} activeDot={{ r: 6 }} />
-          <Line yAxisId="right" type="monotone" dataKey={line2Key} name={line2Name} stroke={line2Color} strokeWidth={2} dot={false} activeDot={{ r: 6 }} />
-        </LineChart>
+      <div style={{ padding: '20px', textAlign: 'center', border: '1px dashed var(--accent-orange)' }}>
+        <p>グラフ描画テスト中（Rechartsが無効化されています）</p>
+        <p>データ件数: {data ? data.length : 0}件</p>
       </div>
     </div>
   );
