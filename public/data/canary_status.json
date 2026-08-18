@@ -1,7 +1,7 @@
 {
   "overallLevel": "ORANGE",
   "overallScore": 75,
-  "lastUpdated": "2026-08-18 22:12:24 JST",
+  "lastUpdated": "2026-08-19 07:29:19 JST",
   "activeAlerts": [
     "🚨 HYG Put/Call Ratio is at RED level (2.53x)"
   ],
@@ -14,7 +14,7 @@
           "description": "Junk Bond to Investment Grade",
           "value": 0.75,
           "previousValue": 0.75,
-          "change": -0.23,
+          "change": -0.08,
           "unit": "x",
           "level": "GREEN",
           "history": []
@@ -25,7 +25,7 @@
           "description": "Junk Bond vs Long-Term Treasury",
           "value": 0.97,
           "previousValue": 0.98,
-          "change": -0.48,
+          "change": -0.35,
           "unit": "x",
           "level": "GREEN",
           "history": []
@@ -49,7 +49,7 @@
           "description": "Real economy vs Safe haven",
           "value": 0.1,
           "previousValue": 0.1,
-          "change": -0.67,
+          "change": -0.27,
           "unit": "x",
           "level": "GREEN",
           "history": []
@@ -59,8 +59,8 @@
           "name": "Gold / S&P500 Ratio",
           "description": "Capital flight to physical asset",
           "value": 0.52,
-          "previousValue": 0.52,
-          "change": -1.04,
+          "previousValue": 0.53,
+          "change": -1.15,
           "unit": "x",
           "level": "GREEN",
           "history": []
@@ -72,8 +72,8 @@
           "name": "KRE Regional Bank ETF",
           "description": "Banking sector health",
           "value": 76.85,
-          "previousValue": 77.39,
-          "change": -0.7,
+          "previousValue": 77.36,
+          "change": -0.66,
           "unit": "USD",
           "level": "GREEN",
           "history": []
