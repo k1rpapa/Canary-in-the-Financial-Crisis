@@ -1,6 +1,7 @@
 import os
 import json
 import datetime
+from datetime import timezone, timedelta
 import yfinance as yf
 import requests
 import google.generativeai as genai
@@ -53,7 +54,8 @@ def analyze_with_gemini(status_data):
             generation_config=genai.GenerationConfig(response_mime_type="application/json")
         )
         result = json.loads(response.text)
-        result['timestamp'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S JST")
+        jst = timezone(timedelta(hours=+9), 'JST')
+        result['timestamp'] = datetime.datetime.now(jst).strftime("%Y-%m-%d %H:%M:%S JST")
         return result
     except Exception as e:
         print(f"Gemini API Error: {e}")
@@ -190,10 +192,11 @@ def main():
         calculate_indicator('kre', 'KRE Regional Bank ETF', 'Banking sector health', data['KRE']['current'], data['KRE']['prev'], 'USD', True)
     ]
     
+    jst = timezone(timedelta(hours=+9), 'JST')
     status = {
         "overallLevel": "YELLOW",
         "overallScore": 65,
-        "lastUpdated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S JST"),
+        "lastUpdated": datetime.datetime.now(jst).strftime("%Y-%m-%d %H:%M:%S JST"),
         "activeAlerts": [],
         "indicators": {
             "realtime": {
