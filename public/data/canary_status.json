@@ -1,7 +1,7 @@
 {
   "overallLevel": "ORANGE",
   "overallScore": 75,
-  "lastUpdated": "2026-08-19 08:29:26 JST",
+  "lastUpdated": "2026-08-19 08:35:02 JST",
   "activeAlerts": [
     "🚨 HYG Put/Call Ratio is at RED level (2.53x)"
   ],
@@ -111,6 +111,6 @@
     "keyFactors": [
       "API連携エラー"
     ],
-    "timestamp": "2026-08-19 08:29:27 JST"
+    "timestamp": "2026-08-19 08:35:02 JST"
   }
 }
