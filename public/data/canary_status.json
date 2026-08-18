@@ -1,7 +1,7 @@
 {
   "overallLevel": "ORANGE",
   "overallScore": 75,
-  "lastUpdated": "2026-08-19 08:03:11 JST",
+  "lastUpdated": "2026-08-19 08:12:55 JST",
   "activeAlerts": [
     "🚨 HYG Put/Call Ratio is at RED level (2.53x)"
   ],
@@ -83,11 +83,11 @@
     "fundamentals": []
   },
   "aiAnalysis": {
-    "summary": "【APIエラー】Gemini APIとの通信または解析に失敗しました。詳細: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateCon",
+    "summary": "【APIエラー】Gemini APIとの通信または解析に失敗しました。詳細: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for gene",
     "riskLevel": "ERROR",
     "keyFactors": [
       "API連携エラー"
     ],
-    "timestamp": "2026-08-19 08:03:11 JST"
+    "timestamp": "2026-08-19 08:12:55 JST"
   }
 }
