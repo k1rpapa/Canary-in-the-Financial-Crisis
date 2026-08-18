@@ -29,9 +29,10 @@ jobs:
 
       - name: Run Canary Data Fetcher
         env:
-          # リポジトリのSecretsに DISCORD_WEBHOOK_URL と GEMINI_API_KEY を設定してください
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          # リポジトリのSecretsに必要なキーを設定してください
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: python scripts/fetch_canary_data.py
 
       - name: Commit and push updated data
