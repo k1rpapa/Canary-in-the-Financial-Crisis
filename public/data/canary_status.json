@@ -1,7 +1,7 @@
 {
   "overallLevel": "ORANGE",
   "overallScore": 75,
-  "lastUpdated": "2026-08-19 08:12:55 JST",
+  "lastUpdated": "2026-08-19 08:20:48 JST",
   "activeAlerts": [
     "🚨 HYG Put/Call Ratio is at RED level (2.53x)"
   ],
@@ -80,7 +80,30 @@
         }
       ]
     },
-    "fundamentals": []
+    "fundamentals": [
+      {
+        "id": "new-home-price",
+        "name": "New Home Median Price",
+        "description": "YoY Growth Rate (Demand exhaustion)",
+        "value": -11.4,
+        "previousValue": -8.2,
+        "change": -3.2,
+        "unit": "% YoY",
+        "level": "RED",
+        "history": []
+      },
+      {
+        "id": "housing-starts",
+        "name": "Housing Starts",
+        "description": "New residential construction projects",
+        "value": 1395,
+        "previousValue": 1420,
+        "change": -1.76,
+        "unit": "k units",
+        "level": "ORANGE",
+        "history": []
+      }
+    ]
   },
   "aiAnalysis": {
     "summary": "【APIエラー】Gemini APIとの通信または解析に失敗しました。詳細: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for gene",
@@ -88,6 +111,6 @@
     "keyFactors": [
       "API連携エラー"
     ],
-    "timestamp": "2026-08-19 08:12:55 JST"
+    "timestamp": "2026-08-19 08:20:49 JST"
   }
 }
