@@ -201,43 +201,12 @@ def main():
         
     print(f"Data successfully fetched and saved. Alerts: {len(alerts)}")
     
-    # Email Notification
-    gmail_address = os.environ.get('GMAIL_ADDRESS')
-    gmail_password = os.environ.get('GMAIL_APP_PASSWORD')
-    target_email = "toru.arima@gmail.com"
-    
-    if gmail_address and gmail_password and len(alerts) > 0:
-        import smtplib
-        from email.mime.text import MIMEText
-        from email.mime.multipart import MIMEMultipart
-        
-        subject = f"[Canary Alert] Market Risk Level: {status['overallLevel']}"
-        body = "【金融危機のカナリアアラート】\n\n以下の指標が警戒水準に達しました：\n"
-        body += "\n".join(alerts)
-        
+    webhook_url = os.environ.get('DISCORD_WEBHOOK_URL')
+    if webhook_url and len(alerts) > 0:
+        msg = "**[Canary Alert]**\n" + "\n".join(alerts)
         if ai_analysis:
-             body += f"\n\n【Gemini AI 分析結果】\nRisk Level: {ai_analysis['riskLevel']}\n"
-             body += f"{ai_analysis['summary']}\n\n[注目要因]\n"
-             body += "\n".join([f"- {factor}" for factor in ai_analysis['keyFactors']])
-             
-        msg = MIMEMultipart()
-        msg['From'] = gmail_address
-        msg['To'] = target_email
-        msg['Subject'] = subject
-        msg.attach(MIMEText(body, 'plain'))
-        
-        try:
-            print(f"Sending alert email to {target_email}...")
-            server = smtplib.SMTP('smtp.gmail.com', 587)
-            server.starttls()
-            server.login(gmail_address, gmail_password)
-            server.send_message(msg)
-            server.quit()
-            print("Alert email sent successfully.")
-        except Exception as e:
-            print(f"Failed to send email: {e}")
-    elif len(alerts) > 0:
-        print("Alerts generated but GMAIL credentials not set in environment.")
+             msg += f"\n\n**[AI Analysis]**\nRisk: {ai_analysis['riskLevel']}\n{ai_analysis['summary']}"
+        requests.post(webhook_url, json={"content": msg})
 
 if __name__ == "__main__":
     main()
