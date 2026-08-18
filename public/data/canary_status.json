@@ -1,0 +1,85 @@
+{
+  "overallLevel": "ORANGE",
+  "overallScore": 75,
+  "lastUpdated": "2026-08-18 21:45:49 JST",
+  "activeAlerts": [
+    "🚨 HYG Put/Call Ratio is at RED level (3.03x)"
+  ],
+  "indicators": {
+    "realtime": {
+      "credit": [
+        {
+          "id": "hyg-lqd",
+          "name": "HYG / LQD Ratio",
+          "description": "Junk Bond to Investment Grade",
+          "value": 0,
+          "previousValue": 0,
+          "change": 0,
+          "unit": "x",
+          "level": "GREEN",
+          "history": []
+        },
+        {
+          "id": "hyg-tlt",
+          "name": "HYG / TLT Ratio",
+          "description": "Junk Bond vs Long-Term Treasury",
+          "value": 0,
+          "previousValue": 0,
+          "change": 0,
+          "unit": "x",
+          "level": "GREEN",
+          "history": []
+        },
+        {
+          "id": "hyg-put-call",
+          "name": "HYG Put/Call Ratio",
+          "description": "Options market hedging demand",
+          "value": 3.03,
+          "previousValue": 2.85,
+          "change": 6.32,
+          "unit": "x",
+          "level": "RED",
+          "history": []
+        }
+      ],
+      "macro": [
+        {
+          "id": "copper-gold",
+          "name": "Copper / Gold Ratio",
+          "description": "Real economy vs Safe haven",
+          "value": 0,
+          "previousValue": 0,
+          "change": 0,
+          "unit": "x",
+          "level": "GREEN",
+          "history": []
+        },
+        {
+          "id": "gold-sp500",
+          "name": "Gold / S&P500 Ratio",
+          "description": "Capital flight to physical asset",
+          "value": 0,
+          "previousValue": 0,
+          "change": 0,
+          "unit": "x",
+          "level": "GREEN",
+          "history": []
+        }
+      ],
+      "banking": [
+        {
+          "id": "kre",
+          "name": "KRE Regional Bank ETF",
+          "description": "Banking sector health",
+          "value": 0,
+          "previousValue": 0,
+          "change": 0,
+          "unit": "USD",
+          "level": "GREEN",
+          "history": []
+        }
+      ]
+    },
+    "fundamentals": []
+  }
+}
