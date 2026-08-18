@@ -58,7 +58,7 @@ def fetch_ticker_data(ticker_symbol):
         ticker = yf.Ticker(ticker_symbol)
         hist = ticker.history(period="5d")
         if len(hist) < 2:
-            return None
+            return None, None
         current = hist['Close'].iloc[-1]
         previous = hist['Close'].iloc[-2]
         return current, previous
@@ -121,6 +121,11 @@ def calculate_indicator(id, name, desc, current, previous, unit, reverse_logic=F
         "history": [] 
     }
 
+def safe_div(num, den):
+    if num is None or den is None or den == 0:
+        return None
+    return num / den
+
 def main():
     print("Fetching market data...")
     
@@ -129,17 +134,17 @@ def main():
         c, p = fetch_ticker_data(symbol)
         data[key] = {'current': c, 'prev': p}
         
-    hyg_lqd_c = data['HYG']['current'] / data['LQD']['current']
-    hyg_lqd_p = data['HYG']['prev'] / data['LQD']['prev']
+    hyg_lqd_c = safe_div(data['HYG']['current'], data['LQD']['current'])
+    hyg_lqd_p = safe_div(data['HYG']['prev'], data['LQD']['prev'])
     
-    hyg_tlt_c = data['HYG']['current'] / data['TLT']['current']
-    hyg_tlt_p = data['HYG']['prev'] / data['TLT']['prev']
+    hyg_tlt_c = safe_div(data['HYG']['current'], data['TLT']['current'])
+    hyg_tlt_p = safe_div(data['HYG']['prev'], data['TLT']['prev'])
     
-    cper_gld_c = data['CPER']['current'] / data['GLD']['current']
-    cper_gld_p = data['CPER']['prev'] / data['GLD']['prev']
+    cper_gld_c = safe_div(data['CPER']['current'], data['GLD']['current'])
+    cper_gld_p = safe_div(data['CPER']['prev'], data['GLD']['prev'])
     
-    gld_spy_c = data['GLD']['current'] / data['SPY']['current']
-    gld_spy_p = data['GLD']['prev'] / data['SPY']['prev']
+    gld_spy_c = safe_div(data['GLD']['current'], data['SPY']['current'])
+    gld_spy_p = safe_div(data['GLD']['prev'], data['SPY']['prev'])
     
     pc_ratio_c, pc_ratio_p = fetch_hyg_put_call_ratio()
     
