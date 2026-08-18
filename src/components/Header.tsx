@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ShieldAlert, ShieldCheck, Shield, AlertTriangle } from 'lucide-react';
 import type { CanaryLevel } from '../types/canary';
 

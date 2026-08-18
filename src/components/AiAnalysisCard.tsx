@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Sparkles, AlertTriangle } from 'lucide-react';
 import type { CanaryStatus } from '../types/canary';
 

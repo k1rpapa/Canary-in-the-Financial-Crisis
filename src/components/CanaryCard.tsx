@@ -1,4 +1,4 @@
-import React from 'react';
+
 import type { CanaryIndicator } from '../types/canary';
 import { LineChart, Line, ResponsiveContainer, YAxis } from 'recharts';
 import { TrendingUp, TrendingDown, Minus } from 'lucide-react';

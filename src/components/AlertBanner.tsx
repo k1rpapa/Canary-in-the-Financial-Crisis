@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { AlertOctagon } from 'lucide-react';
 
 interface AlertBannerProps {
