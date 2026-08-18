@@ -31,7 +31,12 @@ TICKERS = {
 def analyze_with_gemini(status_data):
     if not GEMINI_API_KEY:
         print("GEMINI_API_KEY not set. Skipping AI analysis.")
-        return None
+        return {
+            "summary": "【システムメッセージ】GitHubのリポジトリシークレットに 'GEMINI_API_KEY' が設定されていないか、正しく読み込めませんでした。設定を確認してください。",
+            "riskLevel": "API KEY MISSING",
+            "keyFactors": ["APIキー未設定"],
+            "timestamp": datetime.datetime.now(timezone(timedelta(hours=+9), 'JST')).strftime("%Y-%m-%d %H:%M:%S JST")
+        }
         
     prompt = f"""
     以下の金融市場の最新カナリア指標データを分析し、現在の金融危機・信用収縮のシステミックリスクを評価してください。
@@ -59,7 +64,12 @@ def analyze_with_gemini(status_data):
         return result
     except Exception as e:
         print(f"Gemini API Error: {e}")
-        return None
+        return {
+            "summary": f"【APIエラー】Gemini APIとの通信または解析に失敗しました。詳細: {str(e)[:100]}",
+            "riskLevel": "ERROR",
+            "keyFactors": ["API連携エラー"],
+            "timestamp": datetime.datetime.now(timezone(timedelta(hours=+9), 'JST')).strftime("%Y-%m-%d %H:%M:%S JST")
+        }
 
 def fetch_ticker_data(ticker_symbol):
     # 現実的なモックデータ（フォールバック用）

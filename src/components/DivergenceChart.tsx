@@ -19,8 +19,8 @@ export const DivergenceChart: React.FC<DivergenceChartProps> = ({
     <div className="card flex flex-col gap-4">
       <h3 className="heading-md text-secondary">{title}</h3>
       
-      <div style={{ width: '100%', height: '300px' }}>
-        <ResponsiveContainer width="100%" height="100%">
+      <div style={{ width: '100%', height: '300px', minHeight: '300px' }}>
+        <ResponsiveContainer width="100%" height="100%" minHeight={300}>
           <LineChart data={data} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="var(--card-border)" vertical={false} />
             <XAxis dataKey="date" stroke="var(--text-secondary)" fontSize={12} tickLine={false} axisLine={false} />
