@@ -10,6 +10,12 @@ GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
 
+# Yahoo Finance 用のカスタムセッション (ブロック回避用)
+yf_session = requests.Session()
+yf_session.headers.update({
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+})
+
 # 取得するティッカーシンボル
 TICKERS = {
     'HYG': 'HYG', # ハイイールド債
@@ -55,7 +61,7 @@ def analyze_with_gemini(status_data):
 
 def fetch_ticker_data(ticker_symbol):
     try:
-        ticker = yf.Ticker(ticker_symbol)
+        ticker = yf.Ticker(ticker_symbol, session=yf_session)
         hist = ticker.history(period="5d")
         if len(hist) < 2:
             return None, None
@@ -68,7 +74,7 @@ def fetch_ticker_data(ticker_symbol):
 
 def fetch_hyg_put_call_ratio():
     try:
-        hyg = yf.Ticker("HYG")
+        hyg = yf.Ticker("HYG", session=yf_session)
         options = hyg.options
         if not options:
             return 2.5, 2.0 # fallback mock data
