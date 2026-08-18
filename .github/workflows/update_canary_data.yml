@@ -1,0 +1,43 @@
+name: Update Canary Data
+
+on:
+  schedule:
+    # 毎時0分に実行 (UTC)
+    - cron: '0 * * * *'
+  workflow_dispatch: # 手動実行用
+
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+    
+    # リポジトリへのPush権限を付与
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Canary Data Fetcher
+        env:
+          # リポジトリのSecretsに DISCORD_WEBHOOK_URL と GEMINI_API_KEY を設定してください
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_canary_data.py
+
+      - name: Commit and push updated data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/data/canary_status.json
+          # 変更がある場合のみコミット
+          git diff --quiet && git diff --staged --quiet || (git commit -m "data(canary): Update market data" && git push)
