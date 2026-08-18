@@ -52,7 +52,7 @@ def analyze_with_gemini(status_data):
     """
     
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-1.5-flash-latest')
         # JSON形式でのレスポンスを強制
         response = model.generate_content(
             prompt,
