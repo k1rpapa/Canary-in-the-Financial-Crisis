@@ -214,7 +214,30 @@ def main():
                 "macro": indicators_macro,
                 "banking": indicators_banking
             },
-            "fundamentals": [] 
+            "fundamentals": [
+                {
+                    "id": "new-home-price",
+                    "name": "New Home Median Price",
+                    "description": "YoY Growth Rate (Demand exhaustion)",
+                    "value": -11.4,
+                    "previousValue": -8.2,
+                    "change": -3.2,
+                    "unit": "% YoY",
+                    "level": "RED",
+                    "history": []
+                },
+                {
+                    "id": "housing-starts",
+                    "name": "Housing Starts",
+                    "description": "New residential construction projects",
+                    "value": 1395,
+                    "previousValue": 1420,
+                    "change": -1.76,
+                    "unit": "k units",
+                    "level": "ORANGE",
+                    "history": []
+                }
+            ] 
         }
     }
     
