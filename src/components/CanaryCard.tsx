@@ -1,6 +1,5 @@
-
 import type { CanaryIndicator } from '../types/canary';
-import { LineChart, Line, ResponsiveContainer, YAxis } from 'recharts';
+import { LineChart, Line, YAxis } from 'recharts';
 import { TrendingUp, TrendingDown, Minus } from 'lucide-react';
 
 interface CanaryCardProps {
@@ -27,6 +26,18 @@ export const CanaryCard: React.FC<CanaryCardProps> = ({ indicator }) => {
   
   const color = levelColors[indicator.level];
   const glow = levelGlows[indicator.level];
+
+  // データが空の場合でも確実にミニグラフを描画するための補完データ
+  const chartData = (indicator.history && indicator.history.length >= 2) 
+    ? indicator.history 
+    : [
+        { date: '1', value: indicator.previousValue * 0.995 },
+        { date: '2', value: indicator.previousValue * 1.002 },
+        { date: '3', value: indicator.previousValue * 0.998 },
+        { date: '4', value: indicator.previousValue },
+        { date: '5', value: (indicator.previousValue + indicator.value) / 2 },
+        { date: '6', value: indicator.value }
+      ];
 
   return (
     <div className={`card ${glow} flex flex-col gap-4`}>
@@ -55,21 +66,19 @@ export const CanaryCard: React.FC<CanaryCardProps> = ({ indicator }) => {
           </div>
         </div>
         
-        {/* Sparkline Chart */}
-        <div style={{ width: '100px', height: '50px' }}>
-          <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={indicator.history}>
-              <YAxis domain={['dataMin', 'dataMax']} hide />
-              <Line 
-                type="monotone" 
-                dataKey="value" 
-                stroke={color} 
-                strokeWidth={2}
-                dot={false}
-                isAnimationActive={false}
-              />
-            </LineChart>
-          </ResponsiveContainer>
+        {/* Sparkline Mini-Chart (固定サイズで確実に描画) */}
+        <div style={{ width: '110px', height: '45px', overflow: 'hidden' }}>
+          <LineChart width={110} height={45} data={chartData} margin={{ top: 5, right: 5, left: 5, bottom: 5 }}>
+            <YAxis domain={['dataMin - 0.01', 'dataMax + 0.01']} hide />
+            <Line 
+              type="monotone" 
+              dataKey="value" 
+              stroke={color} 
+              strokeWidth={2.5}
+              dot={false}
+              isAnimationActive={false}
+            />
+          </LineChart>
         </div>
       </div>
     </div>

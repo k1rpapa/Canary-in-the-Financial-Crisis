@@ -48,10 +48,6 @@ function App() {
 
   return (
     <div className="container">
-      <div style={{ background: '#e11d48', color: 'white', padding: '1rem', textAlign: 'center', fontWeight: 'bold', marginBottom: '1rem', borderRadius: '8px' }}>
-        ⚠️ アプリの更新がブラウザに反映されていません！<br/>
-        キーボードの「Ctrl + F5」を押すか、シークレットウィンドウで開いてキャッシュをクリアしてください。
-      </div>
       <Header overallLevel={status.overallLevel} lastUpdated={status.lastUpdated} />
       
       <AlertBanner alerts={status.activeAlerts} />
