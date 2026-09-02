@@ -1,9 +1,9 @@
 {
   "overallLevel": "ORANGE",
   "overallScore": 75,
-  "lastUpdated": "2026-09-02 15:46:56 JST",
+  "lastUpdated": "2026-09-02 20:51:57 JST",
   "activeAlerts": [
-    "🚨 HYG Put/Call Ratio is at RED level (371.0x)"
+    "🚨 HYG Put/Call Ratio is at RED level (3.48x)"
   ],
   "indicators": {
     "realtime": {
@@ -14,7 +14,7 @@
           "description": "Junk Bond to Investment Grade",
           "value": 0.75,
           "previousValue": 0.75,
-          "change": 0.06,
+          "change": -0.0,
           "unit": "x",
           "level": "GREEN",
           "history": [
@@ -106,7 +106,7 @@
           "description": "Junk Bond vs Long-Term Treasury",
           "value": 0.97,
           "previousValue": 0.97,
-          "change": -0.23,
+          "change": -0.1,
           "unit": "x",
           "level": "GREEN",
           "history": [
@@ -180,7 +180,7 @@
             },
             {
               "date": "08/30",
-              "value": 0.96
+              "value": 0.97
             },
             {
               "date": "08/31",
@@ -196,91 +196,91 @@
           "id": "hyg-put-call",
           "name": "HYG Put/Call Ratio",
           "description": "Options market hedging demand",
-          "value": 371.0,
-          "previousValue": 352.45,
+          "value": 3.48,
+          "previousValue": 3.3,
           "change": 5.26,
           "unit": "x",
           "level": "RED",
           "history": [
             {
               "date": "08/13",
-              "value": 352.59
+              "value": 3.3
             },
             {
               "date": "08/14",
-              "value": 353.32
+              "value": 3.31
             },
             {
               "date": "08/15",
-              "value": 354.09
+              "value": 3.32
             },
             {
               "date": "08/16",
-              "value": 355.52
+              "value": 3.32
             },
             {
               "date": "08/17",
-              "value": 356.2
+              "value": 3.34
             },
             {
               "date": "08/18",
-              "value": 358.04
+              "value": 3.35
             },
             {
               "date": "08/19",
-              "value": 358.39
+              "value": 3.36
             },
             {
               "date": "08/20",
-              "value": 358.4
+              "value": 3.36
             },
             {
               "date": "08/21",
-              "value": 359.49
+              "value": 3.38
             },
             {
               "date": "08/22",
-              "value": 360.7
+              "value": 3.38
             },
             {
               "date": "08/23",
-              "value": 362.74
+              "value": 3.39
             },
             {
               "date": "08/24",
-              "value": 363.41
+              "value": 3.4
             },
             {
               "date": "08/25",
-              "value": 363.42
+              "value": 3.4
             },
             {
               "date": "08/26",
-              "value": 366.07
+              "value": 3.43
             },
             {
               "date": "08/27",
-              "value": 366.8
+              "value": 3.43
             },
             {
               "date": "08/28",
-              "value": 366.87
+              "value": 3.44
             },
             {
               "date": "08/29",
-              "value": 367.34
+              "value": 3.45
             },
             {
               "date": "08/30",
-              "value": 368.35
+              "value": 3.46
             },
             {
               "date": "08/31",
-              "value": 370.29
+              "value": 3.47
             },
             {
               "date": "09/01",
-              "value": 371.0
+              "value": 3.48
             }
           ]
         }
@@ -292,7 +292,7 @@
           "description": "Real economy vs Safe haven",
           "value": 0.1,
           "previousValue": 0.1,
-          "change": 0.49,
+          "change": -0.16,
           "unit": "x",
           "level": "GREEN",
           "history": [
@@ -383,62 +383,62 @@
           "name": "Gold / S&P500 Ratio",
           "description": "Capital flight to physical asset",
           "value": 0.52,
-          "previousValue": 0.53,
-          "change": -2.06,
+          "previousValue": 0.52,
+          "change": 0.11,
           "unit": "x",
           "level": "GREEN",
           "history": [
             {
               "date": "08/13",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/14",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/15",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/16",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/17",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/18",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/19",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/20",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/21",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/22",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/23",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/24",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/25",
-              "value": 0.53
+              "value": 0.52
             },
             {
               "date": "08/26",
@@ -477,86 +477,86 @@
           "name": "KRE Regional Bank ETF",
           "description": "Banking sector health",
           "value": 72.62,
-          "previousValue": 73.69,
-          "change": -1.45,
+          "previousValue": 72.53,
+          "change": 0.12,
           "unit": "USD",
-          "level": "YELLOW",
+          "level": "GREEN",
           "history": [
             {
               "date": "08/13",
-              "value": 73.61
+              "value": 72.48
             },
             {
               "date": "08/14",
-              "value": 73.63
+              "value": 72.66
             },
             {
               "date": "08/15",
-              "value": 73.75
+              "value": 72.64
             },
             {
               "date": "08/16",
-              "value": 73.45
+              "value": 72.43
             },
             {
               "date": "08/17",
-              "value": 73.55
+              "value": 72.53
             },
             {
               "date": "08/18",
-              "value": 73.53
+              "value": 72.41
             },
             {
               "date": "08/19",
-              "value": 73.33
+              "value": 72.49
             },
             {
               "date": "08/20",
-              "value": 73.19
+              "value": 72.69
             },
             {
               "date": "08/21",
-              "value": 73.2
+              "value": 72.54
             },
             {
               "date": "08/22",
-              "value": 73.16
+              "value": 72.72
             },
             {
               "date": "08/23",
-              "value": 73.27
+              "value": 72.56
             },
             {
               "date": "08/24",
-              "value": 73.13
+              "value": 72.75
             },
             {
               "date": "08/25",
-              "value": 72.97
+              "value": 72.63
             },
             {
               "date": "08/26",
-              "value": 72.93
+              "value": 72.76
             },
             {
               "date": "08/27",
-              "value": 73.05
+              "value": 72.57
             },
             {
               "date": "08/28",
-              "value": 72.71
+              "value": 72.75
             },
             {
               "date": "08/29",
-              "value": 72.87
+              "value": 72.45
             },
             {
               "date": "08/30",
-              "value": 72.59
+              "value": 72.75
             },
             {
               "date": "08/31",
-              "value": 72.71
+              "value": 72.79
             },
             {
               "date": "09/01",
@@ -579,47 +579,47 @@
         "history": [
           {
             "date": "08/21",
-            "value": -8.22
+            "value": -8.23
           },
           {
             "date": "08/22",
-            "value": -8.5
+            "value": -8.48
           },
           {
             "date": "08/23",
-            "value": -8.79
+            "value": -8.8
           },
           {
             "date": "08/24",
-            "value": -9.04
+            "value": -9.09
           },
           {
             "date": "08/25",
-            "value": -9.37
+            "value": -9.34
           },
           {
             "date": "08/26",
-            "value": -9.67
+            "value": -9.64
           },
           {
             "date": "08/27",
-            "value": -9.96
+            "value": -9.92
           },
           {
             "date": "08/28",
-            "value": -10.25
+            "value": -10.22
           },
           {
             "date": "08/29",
-            "value": -10.52
+            "value": -10.53
           },
           {
             "date": "08/30",
-            "value": -10.81
+            "value": -10.8
           },
           {
             "date": "08/31",
-            "value": -11.12
+            "value": -11.13
           },
           {
             "date": "09/01",
@@ -639,47 +639,47 @@
         "history": [
           {
             "date": "08/21",
-            "value": 1423.26
+            "value": 1419.58
           },
           {
             "date": "08/22",
-            "value": 1419.46
+            "value": 1418.52
           },
           {
             "date": "08/23",
-            "value": 1416.17
+            "value": 1412.76
           },
           {
             "date": "08/24",
-            "value": 1414.07
+            "value": 1412.49
           },
           {
             "date": "08/25",
-            "value": 1407.59
+            "value": 1409.91
           },
           {
             "date": "08/26",
-            "value": 1407.06
+            "value": 1411.03
           },
           {
             "date": "08/27",
-            "value": 1408.37
+            "value": 1403.7
           },
           {
             "date": "08/28",
-            "value": 1403.73
+            "value": 1402.96
           },
           {
             "date": "08/29",
-            "value": 1402.41
+            "value": 1399.64
           },
           {
             "date": "08/30",
-            "value": 1396.46
+            "value": 1401.18
           },
           {
             "date": "08/31",
-            "value": 1399.1
+            "value": 1396.79
           },
           {
             "date": "09/01",
@@ -690,13 +690,13 @@
     ]
   },
   "aiAnalysis": {
-    "summary": "市場の金融危機・信用収縮に対するシステミックリスクは「WARNING」レベル。ジャンク債のプット/コール比率が「RED」レベルに達し、信用市場におけるヘッジ需要が大幅に増加している点は強い懸念材料。また、地域銀行ETF（KRE）が下落傾向で「YELLOW」レベルにあり、金融システムの安定性に対する不安が継続している。しかし、その他の信用指標やマクロ指標は比較的安定しており、現時点では広範なパニックには至っていない。",
+    "summary": "現在の金融市場は、HYG/LQD比率や地域銀行ETF（KRE）など多くの指標が安定しており、全体的には落ち着いているように見えます。しかし、高利回り債（HYG）のプット/コール比率が「RED」レベルにあり、5.26%増加している点は注目すべき警告シグナルです。これは、ジャンク債市場に対する投資家のヘッジ需要と信用収縮への懸念が高まっていることを示唆しており、将来的な信用市場のストレス増大に注意が必要です。現時点では全面的な危機ではなく、特定の領域における警戒感の醸成が見られます。",
     "riskLevel": "WARNING",
     "keyFactors": [
-      "ジャンク債プット/コール比率の急上昇による信用市場の懸念増大",
-      "地域銀行ETF (KRE) の持続的な下落が示す銀行セクターの脆弱性",
-      "主要な信用・マクロ指標が一部安定していることによる限定的なリスク回避"
+      "高利回り債（HYG）プット/コール比率の著しい上昇と「RED」レベル",
+      "その他の信用市場指標（HYG/LQD、HYG/TLT）の安定",
+      "マクロ経済指標および地域銀行セクターの安定した推移"
     ],
-    "timestamp": "2026-09-02 15:47:07 JST"
+    "timestamp": "2026-09-02 20:52:08 JST"
   }
 }
