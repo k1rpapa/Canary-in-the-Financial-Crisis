@@ -1,9 +1,9 @@
 {
   "overallLevel": "ORANGE",
   "overallScore": 75,
-  "lastUpdated": "2026-09-09 19:22:53 JST",
+  "lastUpdated": "2026-09-09 23:54:20 JST",
   "activeAlerts": [
-    "🚨 HYG Put/Call Ratio is at RED level (45475.0x)"
+    "🚨 HYG Put/Call Ratio is at RED level (3.15x)"
   ],
   "indicators": {
     "realtime": {
@@ -14,7 +14,7 @@
           "description": "Junk Bond to Investment Grade",
           "value": 0.75,
           "previousValue": 0.75,
-          "change": 0.08,
+          "change": 0.03,
           "unit": "x",
           "level": "GREEN",
           "history": [
@@ -106,7 +106,7 @@
           "description": "Junk Bond vs Long-Term Treasury",
           "value": 0.96,
           "previousValue": 0.96,
-          "change": 0.0,
+          "change": 0.09,
           "unit": "x",
           "level": "GREEN",
           "history": [
@@ -164,7 +164,7 @@
             },
             {
               "date": "09/02",
-              "value": 0.96
+              "value": 0.97
             },
             {
               "date": "09/03",
@@ -184,7 +184,7 @@
             },
             {
               "date": "09/07",
-              "value": 0.96
+              "value": 0.97
             },
             {
               "date": "09/08",
@@ -196,91 +196,91 @@
           "id": "hyg-put-call",
           "name": "HYG Put/Call Ratio",
           "description": "Options market hedging demand",
-          "value": 45475.0,
-          "previousValue": 43201.25,
+          "value": 3.15,
+          "previousValue": 3.0,
           "change": 5.26,
           "unit": "x",
           "level": "RED",
           "history": [
             {
               "date": "08/20",
-              "value": 43137.36
+              "value": 3.0
             },
             {
               "date": "08/21",
-              "value": 43348.11
+              "value": 3.0
             },
             {
               "date": "08/22",
-              "value": 43383.01
+              "value": 3.02
             },
             {
               "date": "08/23",
-              "value": 43466.39
+              "value": 3.02
             },
             {
               "date": "08/24",
-              "value": 43607.2
+              "value": 3.03
             },
             {
               "date": "08/25",
-              "value": 43792.66
+              "value": 3.03
             },
             {
               "date": "08/26",
-              "value": 43923.2
+              "value": 3.05
             },
             {
               "date": "08/27",
-              "value": 44031.28
+              "value": 3.05
             },
             {
               "date": "08/28",
-              "value": 44174.43
+              "value": 3.06
             },
             {
               "date": "08/29",
-              "value": 44247.37
+              "value": 3.08
             },
             {
               "date": "08/30",
-              "value": 44441.09
+              "value": 3.09
             },
             {
               "date": "08/31",
-              "value": 44473.96
+              "value": 3.08
             },
             {
               "date": "09/01",
-              "value": 44541.6
+              "value": 3.1
             },
             {
               "date": "09/02",
-              "value": 44815.71
+              "value": 3.11
             },
             {
               "date": "09/03",
-              "value": 44824.85
+              "value": 3.11
             },
             {
               "date": "09/04",
-              "value": 44977.91
+              "value": 3.12
             },
             {
               "date": "09/05",
-              "value": 45051.26
+              "value": 3.13
             },
             {
               "date": "09/06",
-              "value": 45240.37
+              "value": 3.14
             },
             {
               "date": "09/07",
-              "value": 45409.98
+              "value": 3.14
             },
             {
               "date": "09/08",
-              "value": 45475.0
+              "value": 3.15
             }
           ]
         }
@@ -292,7 +292,7 @@
           "description": "Real economy vs Safe haven",
           "value": 0.1,
           "previousValue": 0.1,
-          "change": -0.29,
+          "change": -0.71,
           "unit": "x",
           "level": "GREEN",
           "history": [
@@ -382,11 +382,11 @@
           "id": "gold-sp500",
           "name": "Gold / S&P500 Ratio",
           "description": "Capital flight to physical asset",
-          "value": 0.52,
+          "value": 0.53,
           "previousValue": 0.52,
-          "change": 0.15,
+          "change": 1.87,
           "unit": "x",
-          "level": "GREEN",
+          "level": "YELLOW",
           "history": [
             {
               "date": "08/20",
@@ -418,7 +418,7 @@
             },
             {
               "date": "08/27",
-              "value": 0.52
+              "value": 0.53
             },
             {
               "date": "08/28",
@@ -430,43 +430,43 @@
             },
             {
               "date": "08/30",
-              "value": 0.52
+              "value": 0.53
             },
             {
               "date": "08/31",
-              "value": 0.52
+              "value": 0.53
             },
             {
               "date": "09/01",
-              "value": 0.52
+              "value": 0.53
             },
             {
               "date": "09/02",
-              "value": 0.52
+              "value": 0.53
             },
             {
               "date": "09/03",
-              "value": 0.52
+              "value": 0.53
             },
             {
               "date": "09/04",
-              "value": 0.52
+              "value": 0.53
             },
             {
               "date": "09/05",
-              "value": 0.52
+              "value": 0.53
             },
             {
               "date": "09/06",
-              "value": 0.52
+              "value": 0.53
             },
             {
               "date": "09/07",
-              "value": 0.52
+              "value": 0.53
             },
             {
               "date": "09/08",
-              "value": 0.52
+              "value": 0.53
             }
           ]
         }
@@ -476,91 +476,91 @@
           "id": "kre",
           "name": "KRE Regional Bank ETF",
           "description": "Banking sector health",
-          "value": 74.31,
+          "value": 73.85,
           "previousValue": 74.37,
-          "change": -0.08,
+          "change": -0.7,
           "unit": "USD",
           "level": "GREEN",
           "history": [
             {
               "date": "08/20",
-              "value": 74.46
+              "value": 74.51
             },
             {
               "date": "08/21",
-              "value": 74.5
+              "value": 74.27
             },
             {
               "date": "08/22",
-              "value": 74.45
+              "value": 74.27
             },
             {
               "date": "08/23",
-              "value": 74.42
+              "value": 74.39
             },
             {
               "date": "08/24",
-              "value": 74.42
+              "value": 74.39
             },
             {
               "date": "08/25",
-              "value": 74.25
-            },
-            {
-              "date": "08/26",
-              "value": 74.23
-            },
-            {
-              "date": "08/27",
-              "value": 74.25
-            },
-            {
-              "date": "08/28",
-              "value": 74.19
-            },
-            {
-              "date": "08/29",
-              "value": 74.38
-            },
-            {
-              "date": "08/30",
-              "value": 74.17
-            },
-            {
-              "date": "08/31",
-              "value": 74.23
-            },
-            {
-              "date": "09/01",
-              "value": 74.35
-            },
-            {
-              "date": "09/02",
-              "value": 74.26
-            },
-            {
-              "date": "09/03",
-              "value": 74.26
-            },
-            {
-              "date": "09/04",
-              "value": 74.3
-            },
-            {
-              "date": "09/05",
               "value": 74.32
             },
             {
+              "date": "08/26",
+              "value": 74.06
+            },
+            {
+              "date": "08/27",
+              "value": 74.3
+            },
+            {
+              "date": "08/28",
+              "value": 73.99
+            },
+            {
+              "date": "08/29",
+              "value": 74.25
+            },
+            {
+              "date": "08/30",
+              "value": 73.95
+            },
+            {
+              "date": "08/31",
+              "value": 74.11
+            },
+            {
+              "date": "09/01",
+              "value": 74.04
+            },
+            {
+              "date": "09/02",
+              "value": 74.15
+            },
+            {
+              "date": "09/03",
+              "value": 74.02
+            },
+            {
+              "date": "09/04",
+              "value": 74.03
+            },
+            {
+              "date": "09/05",
+              "value": 73.81
+            },
+            {
               "date": "09/06",
-              "value": 74.33
+              "value": 73.9
             },
             {
               "date": "09/07",
-              "value": 74.47
+              "value": 73.91
             },
             {
               "date": "09/08",
-              "value": 74.31
+              "value": 73.85
             }
           ]
         }
@@ -579,15 +579,15 @@
         "history": [
           {
             "date": "08/28",
-            "value": -8.18
+            "value": -8.22
           },
           {
             "date": "08/29",
-            "value": -8.48
+            "value": -8.52
           },
           {
             "date": "08/30",
-            "value": -8.78
+            "value": -8.79
           },
           {
             "date": "08/31",
@@ -595,31 +595,31 @@
           },
           {
             "date": "09/01",
-            "value": -9.34
+            "value": -9.38
           },
           {
             "date": "09/02",
-            "value": -9.64
+            "value": -9.67
           },
           {
             "date": "09/03",
-            "value": -9.92
+            "value": -9.96
           },
           {
             "date": "09/04",
-            "value": -10.25
+            "value": -10.24
           },
           {
             "date": "09/05",
-            "value": -10.51
+            "value": -10.53
           },
           {
             "date": "09/06",
-            "value": -10.81
+            "value": -10.8
           },
           {
             "date": "09/07",
-            "value": -11.12
+            "value": -11.1
           },
           {
             "date": "09/08",
@@ -639,47 +639,47 @@
         "history": [
           {
             "date": "08/28",
-            "value": 1418.96
+            "value": 1418.87
           },
           {
             "date": "08/29",
-            "value": 1415.12
+            "value": 1416.16
           },
           {
             "date": "08/30",
-            "value": 1413.63
+            "value": 1415.77
           },
           {
             "date": "08/31",
-            "value": 1413.18
+            "value": 1416.15
           },
           {
             "date": "09/01",
-            "value": 1414.09
+            "value": 1414.19
           },
           {
             "date": "09/02",
-            "value": 1409.98
+            "value": 1411.43
           },
           {
             "date": "09/03",
-            "value": 1405.67
+            "value": 1405.98
           },
           {
             "date": "09/04",
-            "value": 1404.81
+            "value": 1401.36
           },
           {
             "date": "09/05",
-            "value": 1402.22
+            "value": 1403.0
           },
           {
             "date": "09/06",
-            "value": 1400.25
+            "value": 1402.91
           },
           {
             "date": "09/07",
-            "value": 1399.59
+            "value": 1398.02
           },
           {
             "date": "09/08",
@@ -690,13 +690,13 @@
     ]
   },
   "aiAnalysis": {
-    "summary": "現在の金融市場では、ハイイールド債のプット/コール比率が「RED」レベルにあり、リスク回避的なヘッジ需要の増加が信用市場における特定の懸念を示唆しています。一方で、他の主要な信用指標、マクロ経済指標、銀行セクター指標は「GREEN」を維持。広範なシステミックリスクは限定的と評価されますが、高リスク債市場の動向には引き続き注意が必要です。",
+    "summary": "金融市場のカナリア指標は、一部に警戒感が見られるものの、全体としてはまだシステミックリスクが深刻化している段階ではないことを示唆しています。ハイイールド債のプット/コール比率が「赤」レベルで急上昇しており、信用市場における下方リスクへのヘッジ需要が高まっています。金/S&P500比率も「黄」レベルで上昇しており、安全資産への緩やかな資金シフトが観察されますが、他の主要なクレジット指標や地域銀行ETFは安定しています。",
     "riskLevel": "ELEVATED",
     "keyFactors": [
-      "ハイイールド債のヘッジ需要増加 (HYG Put/Call Ratioの「RED」レベル)",
-      "他の主要信用指標の安定 (HYG/LQD, HYG/TLT比率の「GREEN」レベル)",
-      "マクロ経済・銀行セクター指標の安定 (Copper/Gold, Gold/S&P500, KREの「GREEN」レベル)"
+      "ハイイールド債のプット/コール比率の顕著な上昇",
+      "金/S&P500比率の上昇にみられる安全資産への緩やかな資金シフト",
+      "ジャンク債スプレッド（HYG/LQD、HYG/TLT）の現時点での安定性"
     ],
-    "timestamp": "2026-09-09 19:23:00 JST"
+    "timestamp": "2026-09-09 23:54:27 JST"
   }
 }
